@@ -276,12 +276,27 @@ form input[type="submit"]:hover {
 	nav > ul {
 		display: flex;
 	}
-	nav ul {
+	nav {
 		justify-content: center;
+	}
+	nav ul {
+		padding: 0px;
+	}
+	nav ul li {
+		padding: 10px 0px;
 	}
 	main {
 		grid-column-start: 3;
 		grid-column-end: 4;
+	}
+
+	/*Colombia*/
+	#div_things_to_do {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.div_best_cities_last_place {
+		grid-template-columns: 1fr;
 	}
 }
 
