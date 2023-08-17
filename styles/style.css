@@ -322,6 +322,72 @@ form input[type="submit"]:hover {
 	}
 }
 
+/* ------------------------------------- */
+/* ------------- Ghana -------------- */
+
+#main-ghana {
+  padding: 30px;
+  grid-column: 2/-1;
+}
+
+#main_h2 {
+  margin-top: auto;
+}
+
+#iconic-sites {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
+#iconic-sites > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: box-shadow 0.5s ease-in-out;
+  border-radius: 4px;
+}
+
+#iconic-sites > div:hover {
+  box-shadow: 0px 0px 10px #0b529d;
+}
+
+.iconic-sites-imgs {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.img-container {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  animation: changeImg 15s ease infinite;
+}
+
+@keyframes changeImg {
+  0%,
+  100% {
+    background-image: url("../images/ghana/gh_ani1.jpg");
+  }
+  33% {
+    background-image: url("../images/ghana/gh_ani2.jpg");
+  }
+  66% {
+    background-image: url("../images/ghana/gh_ani3.jpg");
+  }
+}
+
+/* Tablet View */
+@media screen and (max-width: 768px) {
+  #iconic-sites {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*
 URLs:
 
@@ -354,4 +420,15 @@ https://www.wallpaperflare.com/photo-of-high-rise-buildings-during-golden-hour-t
 
 10. Cartagena 2 (Colombia page): Best cities to visit
 https://www.wallpaperflare.com/cartagena-colombia-trip-caribbean-architecture-history-wallpaper-akjjq
+*/
+
+/*--------------------------------------*/
+/*
+1. Ghana: Independence Square: https://www.destguides.com/ghana/ghana-beautiful-places
+2. Ghana: Kakum National Park: https://www.destguides.com/ghana/ghana-beautiful-places
+3. Ghana: Kwame Nkrumah Memorial Park: https://www.destguides.com/ghana/ghana-beautiful-places
+4. Ghana: National Theatre: https://www.destguides.com/ghana/ghana-beautiful-places
+5. Ghana: Elmina Castle: https://www.destguides.com/ghana/ghana-beautiful-places
+6. Ghana: Lake Volta: https://www.destguides.com/ghana/ghana-beautiful-places
+Every other image in this page was obtained from https://www.pexels.com/
 */
